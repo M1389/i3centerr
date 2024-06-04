@@ -1,0 +1,1545 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        background-color: #dc3444;
+    }
+
+
+    .head-line{
+        background-color: #fff;
+         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 50px;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .head-line-logos{
+        margin-left: 20px;
+        
+    }
+
+    .head-line-address{
+        
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    .h-l-telephone{
+        display: flex;
+        padding: 10px;
+        margin: 20px;
+        align-items: center;
+        
+    }
+
+    .head-line-t{
+        width: 25px;
+        height: 25px;
+    }
+
+    .aparat{
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+    }
+
+
+    .head-line-font{
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+    }
+
+    /* here is styles of navigation bar*/
+
+    nav{
+        background-color: #fff;
+        width: auto;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .nav-logo{
+        width: 25%;
+        
+        margin-left: 20px;
+    }
+
+    .nav-logo-image{
+        width: 200px;
+        height: auto;
+    }
+
+
+    .links{
+        
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .links ul{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .links ul li{
+        margin: 0 25px 0 25px ;
+        list-style: none;
+        
+    }
+
+    .links ul li a{
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: black;
+        font-weight: bold;
+        
+    }
+
+    .search{
+        
+        margin-left: 20px;
+    }
+
+    .search-icon{
+        width: 35px;
+        height: 35px    ;
+    }
+
+
+    .video-sec{
+        width: 100%;
+        height: 400px;
+        
+        position: relative;
+        
+    }
+
+
+    .text-top-main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .text-top-main h2{
+        color: #fff;
+        font-size: 45px;
+    }
+
+    .text-top-main h3{
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .video{
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        z-index: -3;
+        
+    }
+
+    .openMenu-but{
+        display: none;
+    }
+
+    .close-but{
+        display: none   ;
+    }
+
+    @media(max-width: 1170px) {
+        .head-line{
+            display: none;
+        }
+    }
+
+    @media(max-width: 1050px) {
+        .head-line{
+            display: none;
+        }
+
+        .links{
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 350px;
+            height: 350px;
+            text-align: left;
+            background-color: #f2462e;
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            transition: 1s;
+            background-color: #fff;
+        }
+
+        .search-icon{
+            display: none;
+        }
+
+        .links ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+        }
+    
+        .links ul li{
+            margin: 20px 10px ;
+            list-style: none;
+            
+        }
+    
+        .links ul li a{
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            color: black;
+            font-weight: bold;
+            
+        }
+
+        .close-but{
+            display: block;
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border: none;
+            margin: 10px;
+        }
+        
+        .openMenu-but{
+            display: block;
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            border: none;
+            margin: 10px;
+
+        }
+
+        .openMenu-but img{
+            width: 30px;
+            height: 30px;
+        }
+
+        nav{
+            background-color: #fff;
+            width: 100%;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .nav-logo{
+            width: 100%;
+            
+            margin-left: 20px;
+        }
+
+
+        
+
+        
+    }
+
+    @media(max-width: 852px) {
+        .text-top-main h2{
+            color: #fff;
+            font-size: 25px;
+        }
+    
+        .text-top-main h3{
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    /* video sec completed and it ends here*/
+    .hello-sec{
+        background-color: #fff;
+        width: 100%;
+        height: 600px;
+        z-index: 2;
+        border-bottom-right-radius: 300px;
+        border-bottom-left-radius: 300px;
+    }
+
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .info-container{
+        width: 18%;
+        height: 150px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: -50px;
+        z-index: 1;
+        box-shadow: 0 0 10px gray;
+    }
+
+    .info-container p{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    .img-g-1{
+        width: 75px;
+        height: 75px;
+    }
+
+    /*business part goes here*/
+
+    .business-div{
+        
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+        
+    }
+
+    .business-div h2{
+        font-size: 45px;
+        font-weight: bold;
+        color: #dc3444;
+        
+    }
+
+
+    .business-div p{
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(56, 54, 54);
+        
+    }
+
+    .organizations{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #fff;
+        
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .org{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .org img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .pointer{
+        
+        width: 10%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pointer div{
+        width: 8px;
+        height: 8px;
+        border-radius: 20px;
+        background-color: #9a464e;
+        cursor: pointer;
+    }
+
+    .center{
+        width: 8px;
+        height: 8px;
+        border-radius: 20px;
+        background-color: #cf182a;
+        cursor: pointer;
+    }
+
+    @media(max-width: 756px) {
+        .info-container{
+            width: 80%;
+            height: 150px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            
+            z-index: 1;
+            box-shadow: 0 0 10px gray;
+        }
+
+        .container{
+            width: 98%;
+            height: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .hello-sec{
+            background-color: #fff;
+            width: 100%;
+            height: 1670px;
+            z-index: 2;
+            border-bottom-right-radius: 300px;
+            border-bottom-left-radius: 300px;
+        }
+
+        
+    }
+
+    @media(max-width: 644px) {
+        .business-div h2{
+            font-size: 35px;
+            font-weight: bold;
+            color: #dc3444;
+            
+        }
+    
+    
+        .business-div p{
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(56, 54, 54);
+            
+        }
+
+        .organizations{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #fff;
+            
+            width: 98%;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .org{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    
+        .org img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media(max-width: 468px) {
+        .organizations{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #fff;
+            
+            width: 98%;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .org{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    
+        .org img{
+            width: 80px;
+            height: 80px;
+        }
+
+        .org p{
+            font-size: 13px;
+        }
+
+        .pointer{
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    
+
+    /*red part goes here*/
+    
+    .red-sec{
+        background-color:#dc3444;
+        width: 100%;
+        height: 800px;
+        background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+        
+    }
+
+   .svg-curve{
+    background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+    margin-bottom: -75px;
+    }
+
+
+   
+
+    .business-div-2{
+        text-align: center;
+        width: 40%;
+        
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .business-div-2 h2{
+        font-size: 45px;
+        font-weight: bold;
+        color: #dc3444;
+        font-family: sans-serif;
+    }
+
+    .business-div-2 p{
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(56, 54, 54);
+    }
+
+
+    /* ad con goes here*/
+
+    .news-con{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .ad-con{
+        width: 38%;
+        background-color: #fff;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ad-con img{
+        width: 90%;
+        height: auto;
+        border-radius: 25px;
+        margin-top: -25px;
+        
+    }
+
+    .ad-con h3{
+        align-self: flex-start;
+        margin: 25px 0 10px 35px;
+        font-size: 20px;
+        color: rgb(45, 36, 36);
+        font-family: sans-serif;
+        
+    }
+
+    .ad-con p{
+        align-self: flex-start;
+        margin-left: 35px;
+        color: rgb(45, 36, 36);
+        width: 80%;
+    }
+
+    .business-div-3{
+        text-align: center;
+        width: 40%;
+        
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    .business-div-3 h2{
+        font-size: 55px;
+        font-weight: bold;
+        color: #fff;
+        font-family: sans-serif;
+    }
+
+
+    .red-ad-sec{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 40px;
+        
+        
+    }
+
+    .red-ad-sec div{
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .red-ad-sec h2{
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+
+    .red-ad-sec p{
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+
+    @media(max-width: 646px) {
+        .news-con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 98%;
+            height: 800px;
+            margin: 0 auto;
+            justify-content: space-evenly;
+        }
+
+        .ad-con{
+            width: 70%;
+            padding: 20px 0;
+            background-color: #fff;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+    
+        .ad-con img{
+            width: 90%;
+            height: auto;
+            border-radius: 25px;
+            margin-top: -25px;
+            
+        }
+    
+        .ad-con h3{
+            align-self: flex-start;
+            margin: 25px 10px 10px 35px;
+            font-size: 20px;
+            color: rgb(45, 36, 36);
+            font-family: sans-serif;
+            
+        }
+    
+        .ad-con p{
+            align-self: flex-start;
+            margin-left: 35px;
+            color: rgb(45, 36, 36);
+            width: 80%;
+        }
+
+        .red-sec{
+            background-color:#dc3444;
+            width: 100%;
+            height: 1500px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            
+        }
+
+        .business-div-3{
+            text-align: center;
+            width: 80%;
+            
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+    
+        .business-div-3 h2{
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        .red-ad-sec{
+            width: 98%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 40px;
+            
+            
+        }
+    
+        .red-ad-sec div{
+            
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        .red-ad-sec h2{
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+        }
+    
+        .red-ad-sec p{
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+
+        
+
+        
+    }
+
+
+    /*courses sec goes here*/
+
+    .courses-container{
+        
+        width: 100%;
+        height: 700px;
+        background-color: #fff;
+    }
+
+
+    
+
+    .courses{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+
+    .course-pack{
+        background-color:#fff;
+        width: 25%;
+        height: 600px;
+        border-radius: 50px;
+        border: 1px solid rgb(157, 155, 155);
+
+    }
+
+
+    .course-pack img{
+        width: 100%;
+        height: 230px;
+        border-radius: 50px;
+    }
+
+
+    .first-pack{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-pack p{
+        margin: 15px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .course-name{
+        font-family: sans-serif;
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        color: #dc3444;
+    }
+
+    .sec-pack{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .sec-pack p{
+        background-color: rgb(205, 204, 204);
+        padding: 10px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .course-full-name{
+        font-family: sans-serif;
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: lighter;
+        color: rgb(32, 28, 28);
+    }
+
+
+    .third-pack{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+
+    .third-pack p{
+        width: 30%;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 15px;
+        color: rgb(55, 52, 52);
+    }
+
+
+    .button-div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .but-1{
+        padding: 8px 50px;
+        font-family: sans-serif;
+        font-size: 15px;
+        color: #fff;
+        background-color: #cf182a;
+        border: none;
+        border-radius: 25px 0 0 25px ;
+    }
+
+
+    .but-1:hover{
+        background-color: #fff;
+        color: #cf182a;
+        border: 2px solid #cf182a;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+    .but-2{
+        padding: 8px 30px;
+        font-family: sans-serif;
+        font-size: 15px;
+        color: rgb(45, 40, 40);
+        background-color: #fff;
+        border: none;
+        border-radius: 0 25px 25px 0 ;
+        border: 2px solid #cf182a;
+    }
+
+    .but-2:hover {
+        background-color: #cf182a;
+        color: #fff;
+        border: 2px solid #fff;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+
+    .svg-2{
+        
+        
+        background-color: #cf182a;
+    }
+
+    .business-div-4{
+        text-align: center;
+        width: 40%;
+        
+        margin: 0 auto;
+        margin-top: -200px;
+    }
+
+    .business-div-4 h2{
+        font-size: 55px;
+        font-weight: bold;
+        color: #fff;
+        font-family: sans-serif;
+    }
+
+    @media(max-width: 697px) {
+        .business-div-4{
+            text-align: center;
+            width: 80%;
+            
+            margin: 0 auto;
+            margin-top: -200px;
+        }
+
+        .business-div-4 h2{
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            font-family: sans-serif;
+        }
+    }
+
+    @media(max-width: 1370px) {
+        .but-2{
+            padding: 8px 18px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: rgb(45, 40, 40);
+            background-color: #fff;
+            border: none;
+            border-radius: 0 25px 25px 0 ;
+            border: 2px solid #cf182a;
+        }
+
+        .but-1{
+            padding: 8px 30px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #fff;
+            background-color: #cf182a;
+            border: none;
+            border-radius: 25px 0 0 25px ;
+        }
+    }
+
+    @media(max-width: 1266px) {
+        .but-2{
+            padding: 5px 10px;
+            font-family: sans-serif;
+            font-size: 10px;
+            color: rgb(45, 40, 40);
+            background-color: #fff;
+            border: none;
+            border-radius: 0 25px 25px 0 ;
+            border: 2px solid #cf182a;
+        }
+
+        .but-1{
+            padding: 5px 20px;
+            font-family: sans-serif;
+            font-size: 10px;
+            color: #fff;
+            background-color: #cf182a;
+            border: none;
+            border-radius: 25px 0 0 25px ;
+        }
+    }
+
+    @media(max-width: 1230px) {
+        .courses{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .courses-container{
+        
+            width: 100%;
+            height: 2500px;
+            background-color: #fff;
+        }
+
+        .course-pack{
+            background-color:#fff;
+            width: 35%;
+            height: 600px;
+            border-radius: 50px;
+            border: 1px solid rgb(157, 155, 155);
+            margin: 20px 0;
+    
+        }
+
+        .but-1{
+            padding: 8px 50px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #fff;
+            background-color: #cf182a;
+            border: none;
+            border-radius: 25px 0 0 25px ;
+        }
+
+
+        .but-2{
+            padding: 8px 30px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: rgb(45, 40, 40);
+            background-color: #fff;
+            border: none;
+            border-radius: 0 25px 25px 0 ;
+            border: 2px solid #cf182a;
+        }
+
+        @media(max-width: 976px) {
+            .course-pack{
+                background-color:#fff;
+                width: 45%;
+                height: 600px;
+                border-radius: 50px;
+                border: 1px solid rgb(157, 155, 155);
+                margin: 20px 0;
+        
+            }
+        }
+
+        @media(max-width: 754px) {
+            .course-pack{
+                background-color:#fff;
+                width: 65%;
+                height: 600px;
+                border-radius: 50px;
+                border: 1px solid rgb(157, 155, 155);
+                margin: 20px 0;
+        
+            }
+
+            .business-div-3 h2{
+                font-size: 45px;
+                font-weight: bold;
+                color: #fff;
+                font-family: sans-serif;
+            }
+        }
+
+        @media(max-width: 522px) {
+            .course-pack{
+                background-color:#fff;
+                width: 85%;
+                height: 600px;
+                border-radius: 50px;
+                border: 1px solid rgb(157, 155, 155);
+                margin: 20px 0;
+        
+            }
+
+            .business-div-3 h2{
+                font-size: 35px;
+                font-weight: bold;
+                color: #fff;
+                font-family: sans-serif;
+            }
+
+            .business-div-2{
+                text-align: center;
+                width: 80%;
+                
+                margin: 0 auto;
+                margin-top: 70px;
+            }
+            .business-div-2 h2{
+                font-size: 35px;
+                font-weight: bold;
+                color: #dc3444;
+                font-family: sans-serif;
+            }
+        
+            .business-div-2 p{
+                font-size: 13px;
+                font-weight: bold;
+                color: rgb(56, 54, 54);
+            }
+        }
+
+        @media(max-width: 400px) {
+            .course-pack{
+                background-color:#fff;
+                width: 98%;
+                height: 600px;
+                border-radius: 50px;
+                border: 1px solid rgb(157, 155, 155);
+                margin: 20px 0;
+        
+            }
+        }
+    }
+
+
+    /* last con goes here*/
+
+
+    .last-con{
+        background-color: aqua;
+        width: 100%;
+        background-color: #cf182a;
+        background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+        
+        
+    }
+
+
+    .last-con-div{
+        width: 90%;
+        margin: 0 auto;
+        height: 600px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+    }
+
+    .n-con-last{
+        background-color: #fff;
+        width: 30%;
+        border-radius: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .n-con-last img{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -20px;
+        border-radius: 25px;
+    }
+
+    .n-con-last p{
+        font-family: sans-serif;
+        color: rgb(77, 70, 70);
+        margin: 20px 0;
+    }
+
+    .n-con-last button{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 0;
+        border-radius: 50px;
+        border: none;
+        font-size: 18px;
+        color: #fff;
+        background-color: #cf182a;
+
+    }
+
+    .n-con-last button:hover{
+        background-color: #fff;
+        color: rgb(78, 72, 72);
+        border: 2px solid #cf182a;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+    @media(max-width: 1130px) {
+        .last-con-div{
+            width: 98%;
+            margin: 0 auto;
+            height: 2200px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            
+        }
+    
+        .n-con-last{
+            background-color: #fff;
+            width: 70%;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+    }
+
+    @media(max-width: 631px) {
+        .svg-2{
+            margin-bottom: 55px;
+        
+            background-color: #cf182a;
+        }
+    }
+
+    @media(max-width: 490px) {
+        .last-con-div{
+            width: 98%;
+            margin: 0 auto;
+            height: 2200px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            
+        }
+
+        .n-con-last{
+            background-color: #fff;
+            width: 90%;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+    }
+
+    /* footer goes here*/
+
+    .upper-footer{
+        background-color: #fff;
+        width: 100%;
+
+    }
+
+    .upper-footer p{
+        color: #fff;
+    }
+
+    .footer{
+        width: 100%;
+        background-color: #fff;
+        height: 400px;
+    }
+
+
+    .international-stu-foot-con{
+        background-color: #cf182a;
+        border-radius: 25px;
+        background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+        width: 80%;
+        margin: 0 auto;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+
+    }
+
+    .international-stu-foot-con p{
+        font-family: sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .international-stu-foot-con div button{
+        background-color: #fff;
+        padding: 25px 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size:20px;
+        font-weight: bold;
+    }
+
+    .international-stu-foot-con div button:hover{
+        background-color: azure;
+    }
+
+    .f-f-d{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        background-color: beige;
+        margin-top: 20px;
+    }
+
+    .f-f-d img{
+        width: 25%;
+    }
+
+    .calling-div{
+        display: inline-block;
+        display: flex;
+        align-items: center;
+    }
+
+    .calling-div img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .g-map{
+        border-radius: 20px;
+        border: 3px solid #cf182a;
+    }
+
+
+    @media(max-width: 1228px) {
+        .international-stu-foot-con p{
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .international-stu-foot-con div button{
+            background-color: #fff;
+            padding: 15px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size:20px;
+            font-weight: bold;
+        }
+
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+    }
+
+    @media(max-width: 776px) {
+        .international-stu-foot-con p{
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .international-stu-foot-con div button{
+            background-color: #fff;
+            padding: 15px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+
+        .f-f-d{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: beige;
+            margin-top: 20px;
+        }
+
+        .calling-div{
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+    }
+
+    @media(max-width: 570px) {
+        .international-stu-foot-con p{
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .international-stu-foot-con div button{
+            background-color: #fff;
+            padding: 15px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+    }
+
+    @media(max-width: 450px) {
+        .international-stu-foot-con p{
+            font-family: sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .international-stu-foot-con div button{
+            background-color: #fff;
+            padding: 4px 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+    }
+
+    @media(max-width: 390px) {
+        .international-stu-foot-con p{
+            font-family: sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .international-stu-foot-con div button{
+            background-color: #fff;
+            padding: 4px 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size:10px;
+            font-weight: bold;
+        }
+
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+        .international-stu-foot-con{
+            background-color: #cf182a;
+            border-radius: 25px;
+            background-image: url(https://i3center.com/wp-content/uploads/2022/01/newsletter_bg-1.png);
+            width: 98%;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }
+    }
+
+    
+
+
+     
+
+    
